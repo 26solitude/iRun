@@ -1,99 +1,54 @@
-# iRun
+# 🏃‍♂️ iRun - 게이미피케이션 러닝 앱
 
-iRun은 Flutter로 개발된 러닝 기록 애플리케이션으로 Android와 Web 환경에서 동작시킬 수 있습니다.
+**iRun**은 업적, 티어 시스템 등 게이미피케이션 요소를 적용한 러닝 기록 애플리케이션으로, Flutter로 개발되어 Android와 Web 환경에서 동작합니다. 사용자의 러닝 경험을 더욱 즐겁고 흥미롭게 만들어 지속적인 목표 달성을 돕습니다.
 
-동영상 데모를 보려면 [여기](https://youtu.be/pWvLRgoUIC8?si=chBp9lhsnPXh4MNj)를 클릭하세요.
+## 🌟 프로젝트 개요
+- Flutter 기반의 크로스 플랫폼 러닝 애플리케이션
+- 러닝 활동에 재미와 동기를 부여하는 게이미피케이션 요소 적용
 
+## 📱 앱 화면
 
----
-## 기능
-1. 구글 로그인 지원
-2. 러닝 기록 측정
-3. 각 러닝에 대한 상세 통계 정보 제공
-4. 모든 사용자 간에 랭킹 제공
-5. 현재 사용자의 업적 기능
-6. 음악 기능 제공
-7. TTS 기능 제공
+#### 러닝 중 화면
 
----
-## 상세 화면
-1. 로그인 화면
-![login](https://github.com/OSP-ARAM/iRun/assets/138470360/62d1de09-d20c-49e9-bea3-f5b93b3c8915)
-2. 메인 화면
-![main](https://github.com/OSP-ARAM/iRun/assets/138470360/3cfe31c1-5a7d-43e1-9963-186b68c91435)
-3. 러닝 기록 화면
-![runRecord](https://github.com/OSP-ARAM/iRun/assets/138470360/8072fe0c-fc72-4351-a1b2-8b975c7437e4)
-4. 러닝 기록 중지 화면
-![runStop](https://github.com/OSP-ARAM/iRun/assets/138470360/56a0f45a-2a02-4ab1-8162-3b8c03f86e15)
-5. 러닝 통계 리스트 화면
-![log](https://github.com/OSP-ARAM/iRun/assets/138470360/0568ad00-5cb0-4e1e-9ceb-f5c735982a73)
-6. 러닝 통계 상세 화면
-![logDetail](https://github.com/OSP-ARAM/iRun/assets/138470360/bd7e2dac-723a-404b-87a1-f94097ecb15f)
-7. 음악 화면
-![music](https://github.com/OSP-ARAM/iRun/assets/138470360/9c85956a-bb2e-4425-9d8a-18ff97c11086)
-8. 랭킹 화면
-![ranking](https://github.com/OSP-ARAM/iRun/assets/138470360/49c6b2e3-9de5-4bbf-9cce-9a6690737c70)
-9. 업적 화면
-![achievement](https://github.com/OSP-ARAM/iRun/assets/138470360/fce8d827-a53b-4983-826e-595884be7910)
+<img src="https://i.imgur.com/vaVophf.png" width="400">
+
+#### 랭킹 화면
+
+<img src="https://i.imgur.com/iHediTD.png" width="400">
+
+#### 업적 화면
+
+<img src="https://i.imgur.com/NiBRm8n.png" width="400">
+
+## 📋 주요 기능
+- 러닝 기록 측정 및 관리
+- 상세한 러닝 통계 정보 제공
+- 사용자 간 랭킹 시스템
+- 사용자 업적 및 보상 시스템
+- 러닝 중 음악 재생 기능
+- 텍스트 음성 변환(TTS) 기능
+- 날씨 API를 통한 실시간 날씨 정보 제공
 
 ---
 
-## Getting Started
+## 🛠 기술 스택
 
-아래 설명을 통해 개발 및 테스트 목적으로 로컬 환경에서 iRun 프로젝트 사본을 실행해 볼 수 있습니다.
+- **Frontend**: Flutter, Dart
+- **Backend & Database**: Firebase
+- **API 연동**: 날씨 API
 
-### 환경 설정
+## 🚩 주요 성과 및 기여
 
-  * 로컬 환경에 최신 버전의 Flutter 및 Dart가 설치되어 있어야 합니다.
-  * 로컬 환경에서 최신 버전의 Firebase가 설치되어 있고, 유효한 Firebase 프로젝트가 있어야 합니다.
-  * 유효한 API 키가 있는 구글 계정 및 OpenWeather 계정이 있어야 합니다.
+### 🔥 성능 최적화
+- **Provider 패턴과 로컬 캐싱 기술을 적용하여** 이미지 데이터를 로컬에 저장하고, 탭 전환 시 발생하던 약 5초의 로딩 지연을 완전히 해소하였습니다.
+- 사용자의 체감 성능과 앱의 전반적인 사용자 경험(UX)이 크게 향상되었습니다.
 
-**Step 1:**
+### 📌 효율적인 상태 관리
+- **Provider 패턴을 활용한 앱 상태 관리 최적화**로 불필요한 상태 업데이트를 최소화하고, 사용자의 액션에 즉각적으로 반응할 수 있도록 개선하였습니다.
 
-아래 링크를 사용해서 이 레포지토리를 다운로드하거나 복제합니다.:
+### ☀️ UI/UX 향상
+- **날씨 API를 연동하여 사용자의 현재 위치에서 실시간 날씨 정보를 제공하였습니다.**
+- UI 위젯 형태로 제공하여 사용자가 쉽게 확인할 수 있게 UX를 개선하였습니다.
 
-```
-https://github.com/OSP-ARAM/iRun.git
-```
 
-**Step 2:**
-
-프로젝트의 루트 경로로 이동해서 콘솔에서 다음 명령을 실행하고, 필요한 종속성을 모두 불러옵니다.:
-
-```
-flutter pub get 
-```
-
-콘솔에서 다음 명령을 실행하고, Firebase에 로그인해 당신의 프로젝트와 연결해주어야 합니다.
-
-```
-firebase login
-```
-
-**Step 3:**
-
-각 파일에서 유효한 API 키와 keystore 파일을 추가해줍니다.
-
-- iRun/lib/firebase_options.dart : firebase 초기 설정을 통해 자동 생성
-- iRun/android/app/keystore 에 keystore 파일 추가
-- iRun/lib/login/login_api.dart
-```dart
-clientId: YOUR_CLIENT_ID.apps.googleusercontent.com
-```
-- iRun/lib/home/home_page.dart
-```dart
-final _weatherService = WeatherService('YOUR_API_KEY");
-```
-- iRun/web/index.html
-```html
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-```
-
-**Step 4:**
-
-콘솔에서 아래 명령어를 실행하고 app을 실행합니다.
-
-```
-flutter run
-```
-
+동영상 데모를 보려면 [여기](https://youtu.be/pWvLRgoUIC8?si=chBp9lhsnPXh4MNj)를 클릭하세요
